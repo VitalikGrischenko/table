@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+<body>
+ <h1>Розклад і журнал групи</h1>
+
+    <section>
+        <h2>1. Дзвінки</h2>
+
+        <table border="1">
+            <caption>Розклад дзвінків</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Номер пари</th>
+                    <th scope="col">Початок</th>
+                    <th scope="col">Кінець</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>08:30</td>
+                    <td>09:50</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>10:00</td>
+                    <td>11:20</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>11:30</td>
+                    <td>12:50</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>13:20</td>
+                    <td>14:40</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>2. Розклад на тиждень</h2>
+
+        <table border="1">
+            <caption>Розклад занять групи</caption>
+
+            <colgroup>
+                <col>
+                <col span="5">
+            </colgroup>
+
+            <thead>
+                <tr>
+                    <th scope="col">Пара</th>
+                    <th scope="col">Понеділок</th>
+                    <th scope="col">Вівторок</th>
+                    <th scope="col">Середа</th>
+                    <th scope="col">Четвер</th>
+                    <th scope="col">П'ятниця</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Математика</td>
+                    <td>Українська мова</td>
+                    <td rowspan="4">Вихідний</td>
+                    <td>Інформатика</td>
+                    <td>Історія</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Англійська мова</td>
+                    <td>Фізика</td>
+                    <td rowspan="2">Лабораторна робота</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td rowspan="2">Лабораторна робота</td>
+                    <td>Інформатика</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Англійська мова</td>
+                    <td>Українська мова</td>
+                    <td>Історія </td>
+                </tr>
+                <tr>
+                    <td colspan="6">Класна година</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="6">Розклад навчальних занять групи</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+</body>
+</html>
